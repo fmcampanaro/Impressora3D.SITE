@@ -1,0 +1,68 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+header{
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    overflow: auto;
+}
+header h1{
+    margin: 40px;
+    text-align: center;
+}
+header #topicos{
+    display: flex;
+    justify-content: space-evenly;
+    vertical-align: middle;
+}
+header #topicos #botao{
+    position: relative;
+    height: 500px;
+    border: none;
+    width: 33.33%;
+    transition: width 0.5s, filter 0.4s;
+}
+#background{
+    background-image: url("https://img.olhardigital.com.br/wp-content/uploads/2021/06/O-engenheiro-demonstra-o-coracao-impresso-em-uma-impressora-3D.-Credito-Shutterstock.jpg");
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    filter: brightness(0.5);
+}
+#conteudo{
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+}
+#conteudo h2{
+    font-size: 40px;
+}
+#conteudo p{
+    font-size: 20px;
+}
+header #topicos #botao:hover{
+    width: 40%;
+    z-index: +1;
+    filter: brightness(1.4);
+}
+main{
+    background-color: rgb(62, 62, 62);
+    width: 100%;
+    height: 500px;
+}
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(49, 49, 49);
+}
+
